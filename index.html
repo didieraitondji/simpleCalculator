@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/src/output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="flex flex-row items-center justify-center min-w-[100%] min-h-[100vh] overflow-auto"
+  >
+    <div id="calculatrice" class="w-[350px] bg-black rounded-lg p-3 font-mono">
+      <h1 class="text-white font-bold text-xl pb-2">Ma Super Calculatrice</h1>
+      <div
+        id="ecran"
+        class="h-[110px] flex flex-col justify-center bg-slate-200 px-1 py-2 rounded-sm"
+      >
+        <div
+          id="e1"
+          class="flex h-1/2 overflow-auto overflow-x-auto items-center justify-end text-3xl font-[arial] border-b border-slate-300 select-none"
+        >0</div>
+        <div
+          id="e2"
+          class="flex h-1/2 items-center justify-end text-3xl font-[arial] select-none"
+        >0</div>
+      </div>
+      <div id="touches">
+        <div class="flex flex-row-reverse pt-3 w-full space-x-3">
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-yellow-400 h-[60px] rounded-sm items-center justify-center text-3xl font-bold text-white cursor-pointer select-none"
+              id="toucheefface"
+              >C</span>
+          </div>
+          <div class="w-1/4"></div>
+          <div class="w-1/4"></div>
+          <div class="w-1/4"></div>
+        </div>
+        <div class="flex pt-3 w-full space-x-3">
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-yellow-400 h-[60px] rounded-sm items-center justify-center text-3xl font-bold text-white cursor-pointer select-none"
+              id="toucheeffaceun"
+              >AC</span
+            >
+          </div>
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none"
+              id="touchec"
+              >(</span
+            >
+          </div>
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none"
+              id="touchec"
+              >)</span
+            >
+          </div>
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none touchedivision"
+              id="toucheop"
+              >/</span
+            >
+          </div>
+        </div>
+        <div class="flex pt-3 w-full space-x-3">
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none"
+              id="touchec"
+              >7</span
+            >
+          </div>
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none"
+              id="touchec"
+              >8</span
+            >
+          </div>
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none"
+              id="touchec"
+              >9</span
+            >
+          </div>
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none touchefois"
+              id="toucheop"
+              >*</span
+            >
+          </div>
+        </div>
+
+        <!-- ligne de 4 -->
+        <div class="flex pt-3 w-full space-x-3">
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none"
+              id="touchec"
+              >4</span
+            >
+          </div>
+
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none"
+              id="touchec"
+              >5</span
+            >
+          </div>
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none"
+              id="touchec"
+              >6</span
+            >
+          </div>
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none touchemoins"
+              id="toucheop"
+              >-</span
+            >
+          </div>
+        </div>
+
+        <!-- ligne de 1 -->
+        <div class="flex pt-3 w-full space-x-3">
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none"
+              id="touchec"
+              >1</span
+            >
+          </div>
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none"
+              id="touchec"
+              >2</span
+            >
+          </div>
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none"
+              id="touchec"
+              >3</span
+            >
+          </div>
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none toucheplus"
+              id="toucheop"
+              >+</span
+            >
+          </div>
+        </div>
+
+        <!-- Dernière ligne -->
+        <div class="flex pt-3 w-full space-x-3">
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none"
+              id="touchec"
+              >0</span
+            >
+          </div>
+          <div class="w-1/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none touchepoint"
+              id="touchpt"
+              >.</span
+            >
+          </div>
+          <div class="w-2/4">
+            <span
+              class="flex w-full bg-white h-[60px] rounded-sm items-center justify-center text-3xl font-bold cursor-pointer select-none"
+              id="toucheEgale"
+              >=</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts.js"></script>
+  </body>
+</html>
